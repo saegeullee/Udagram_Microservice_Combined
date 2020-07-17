@@ -1,18 +1,18 @@
-version: "3"
+version: '3'
 services:
   reverseproxy:
     build:
       context: .
-    image: scheele/reverseproxy 
+    image: lemix777/reverseproxy
   backend_user:
     build:
       context: ../../udacity-c3-restapi-user
-    image: scheele/udacity-restapi-user
+    image: lemix777/udacity-restapi-user
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed  
-    image: scheele/udacity-restapi-feed
+      context: ../../udacity-c3-restapi-feed
+    image: lemix777/udacity-restapi-feed
   frontend:
     build:
-      context: ../../udacity-c3-frontend  
-    image: scheele/udacity-frontend:local
+      context: ../../udacity-c3-frontend
+    image: lemix777/udacity-frontend:local
