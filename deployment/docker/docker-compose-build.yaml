@@ -6,13 +6,13 @@ services:
     image: lemix777/reverseproxy
   backend_user:
     build:
-      context: ../../udacity-c3-restapi-user
-    image: lemix777/udacity-restapi-user
+      context: ../../restapi-user
+    image: lemix777/restapi-user
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed
-    image: lemix777/udacity-restapi-feed
+      context: ../../restapi-feed
+    image: lemix777/restapi-feed
   frontend:
     build:
-      context: ../../udacity-c3-frontend
-    image: lemix777/udacity-frontend:local
+      context: ../../frontend
+    image: lemix777/frontend:local
