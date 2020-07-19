@@ -16,3 +16,4 @@ before_install:
 
 install:
   - docker-compose -f deployment/docker/docker-compose-build.yaml build --parallel
+  - docker-compose -f deployment/docker/docker-compose-build.yaml push
