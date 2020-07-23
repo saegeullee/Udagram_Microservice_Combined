@@ -35,6 +35,6 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: 'http://localhost:8100'
   frontend:
-    image: lemix777/frontend:local
+    image: lemix777/frontend:lastest
     ports:
       - '8100:80'

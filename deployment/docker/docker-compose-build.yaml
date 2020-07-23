@@ -15,4 +15,4 @@ services:
   frontend:
     build:
       context: ../../frontend
-    image: lemix777/frontend:local
+    image: lemix777/frontend:latest
